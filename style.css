@@ -1,0 +1,660 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    background: #fff5f7;
+    color: #4a1f2b;
+    overflow-x: hidden;
+}
+
+
+/* =========================
+   PASSWORD SCREEN
+========================= */
+
+.password-screen {
+    position: fixed;
+    inset: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background:
+        radial-gradient(circle at top, #ffdce5, transparent 45%),
+        linear-gradient(135deg, #fff0f4, #ffd1dc);
+
+    z-index: 9999;
+}
+
+.password-box {
+    width: 90%;
+    max-width: 450px;
+
+    padding: 45px 35px;
+
+    text-align: center;
+
+    background: rgba(255,255,255,0.7);
+
+    border: 1px solid rgba(255,255,255,0.8);
+
+    border-radius: 30px;
+
+    box-shadow:
+        0 25px 70px rgba(120,30,60,0.15);
+
+    backdrop-filter: blur(15px);
+}
+
+.lock-heart {
+    font-size: 65px;
+    margin-bottom: 15px;
+
+    animation: heartbeat 1.5s infinite;
+}
+
+.password-box h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 42px;
+    color: #9c274c;
+    margin-bottom: 10px;
+}
+
+.password-box p {
+    margin-bottom: 25px;
+    color: #79515d;
+}
+
+.password-box input {
+    width: 100%;
+
+    padding: 15px 20px;
+
+    border-radius: 50px;
+
+    border: 1px solid #f0a8b9;
+
+    outline: none;
+
+    font-family: inherit;
+
+    text-align: center;
+
+    margin-bottom: 15px;
+
+    background: white;
+}
+
+.password-box button,
+.surprise-box button,
+.scroll-btn {
+
+    border: none;
+
+    padding: 14px 28px;
+
+    border-radius: 50px;
+
+    background: #b8325a;
+
+    color: white;
+
+    font-family: inherit;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow: 0 10px 25px rgba(184,50,90,0.25);
+}
+
+.password-box button:hover,
+.surprise-box button:hover,
+.scroll-btn:hover {
+
+    transform: translateY(-3px);
+
+    background: #922546;
+}
+
+#errorMessage {
+    color: #d62850;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    background:
+        radial-gradient(circle at 20% 20%, #ffd7e2, transparent 30%),
+        radial-gradient(circle at 80% 80%, #ffc4d3, transparent 30%),
+        #fff6f8;
+
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+    position: relative;
+    z-index: 2;
+}
+
+.small-title {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 12px;
+    color: #a34862;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+
+    font-family: "Dancing Script", cursive;
+
+    font-size: clamp(65px, 10vw, 120px);
+
+    line-height: 0.95;
+
+    color: #7d203e;
+
+    margin-bottom: 30px;
+}
+
+.hero h1 span {
+    display: block;
+    color: #c73761;
+}
+
+.hero-text {
+
+    max-width: 600px;
+
+    margin: auto;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    color: #704957;
+
+    margin-bottom: 35px;
+}
+
+
+/* =========================
+   SECTIONS
+========================= */
+
+section {
+    padding: 100px 7%;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-heading p {
+
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    color: #b8325a;
+
+    margin-bottom: 10px;
+}
+
+.section-heading h2 {
+
+    font-family: "Dancing Script", cursive;
+
+    font-size: clamp(40px, 6vw, 65px);
+
+    color: #7d203e;
+}
+
+
+/* =========================
+   LOVE LETTER
+========================= */
+
+.love-message {
+    background: #fff;
+}
+
+.letter {
+
+    max-width: 750px;
+
+    margin: auto;
+
+    padding: 50px;
+
+    background: #fff7f9;
+
+    border-radius: 25px;
+
+    border: 1px solid #f5d1da;
+
+    box-shadow: 0 20px 50px rgba(120,30,60,0.08);
+
+    font-family: "Dancing Script", cursive;
+
+    font-size: 22px;
+
+    line-height: 1.8;
+}
+
+.letter p {
+    margin-bottom: 20px;
+}
+
+.signature {
+    text-align: right;
+    color: #a52d50;
+}
+
+
+/* =========================
+   MEMORIES
+========================= */
+
+.memories {
+    background: #fff3f6;
+}
+
+.memory-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 35px;
+}
+
+.memory-card {
+
+    background: white;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    box-shadow: 0 15px 40px rgba(120,30,60,0.08);
+
+    transition: 0.4s;
+}
+
+.memory-card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 25px 50px rgba(120,30,60,0.15);
+}
+
+.photo-container {
+
+    height: 350px;
+
+    overflow: hidden;
+}
+
+.photo-container img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.memory-card:hover img {
+    transform: scale(1.05);
+}
+
+.memory-content {
+    padding: 25px;
+}
+
+.memory-content span {
+
+    color: #d15a77;
+
+    font-size: 13px;
+}
+
+.memory-content h3 {
+
+    font-family: "Dancing Script", cursive;
+
+    font-size: 32px;
+
+    color: #8d2847;
+
+    margin: 5px 0 10px;
+}
+
+.memory-content p {
+
+    color: #765561;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   GALLERY
+========================= */
+
+.gallery {
+    background: #fff;
+}
+
+.gallery-grid {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 18px;
+}
+
+.gallery-item {
+
+    height: 320px;
+
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+.gallery-item img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: 0.5s;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.08);
+}
+
+
+/* =========================
+   SURPRISE
+========================= */
+
+.surprise {
+
+    min-height: 80vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(circle, #ffd6e0, #fff5f7);
+}
+
+.surprise-box {
+
+    max-width: 650px;
+}
+
+.gift {
+
+    font-size: 80px;
+
+    animation: floating 2s ease-in-out infinite;
+
+    margin-bottom: 20px;
+}
+
+.surprise-box h2 {
+
+    font-family: "Dancing Script", cursive;
+
+    font-size: 60px;
+
+    color: #8d2847;
+
+    margin-bottom: 15px;
+}
+
+.surprise-box > p {
+
+    margin-bottom: 25px;
+
+    color: #79515d;
+}
+
+.surprise-message {
+
+    margin-top: 40px;
+
+    padding: 35px;
+
+    border-radius: 25px;
+
+    background: rgba(255,255,255,0.8);
+
+    box-shadow: 0 20px 50px rgba(120,30,60,0.1);
+
+    animation: appear 0.7s ease;
+}
+
+.surprise-message h3 {
+
+    font-family: "Dancing Script", cursive;
+
+    font-size: 45px;
+
+    color: #c73761;
+
+    margin-bottom: 10px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+
+    padding: 40px 20px;
+
+    text-align: center;
+
+    background: #5c1930;
+
+    color: #ffe9ef;
+
+    line-height: 2;
+}
+
+
+/* =========================
+   FLOATING HEARTS
+========================= */
+
+.heart {
+
+    position: fixed;
+
+    bottom: -30px;
+
+    pointer-events: none;
+
+    animation: floatHeart linear forwards;
+
+    z-index: 5;
+
+    opacity: 0.7;
+}
+
+
+/* =========================
+   ANIMATIONS
+========================= */
+
+@keyframes floatHeart {
+
+    0% {
+
+        transform:
+            translateY(0)
+            rotate(0deg);
+
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0.8;
+    }
+
+    100% {
+
+        transform:
+            translateY(-110vh)
+            rotate(360deg);
+
+        opacity: 0;
+    }
+}
+
+@keyframes heartbeat {
+
+    0%,100% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.15);
+    }
+}
+
+@keyframes floating {
+
+    0%,100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@keyframes appear {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+    section {
+        padding: 70px 5%;
+    }
+
+    .password-box {
+        padding: 35px 22px;
+    }
+
+    .password-box h1 {
+        font-size: 35px;
+    }
+
+    .hero h1 {
+        font-size: 70px;
+    }
+
+    .hero-text {
+        font-size: 15px;
+    }
+
+    .letter {
+        padding: 30px 22px;
+        font-size: 20px;
+    }
+
+    .memory-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .photo-container {
+        height: 300px;
+    }
+
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-item {
+        height: 220px;
+    }
+
+    .surprise-box h2 {
+        font-size: 45px;
+    }
+}
