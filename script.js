@@ -47,7 +47,7 @@ function unlockWebsite() {
     } else {
 
         error.innerHTML =
-            "Wrong password... try again, birthday boy ❤️";
+            "Wrong password... try again, birthday CHUNNA 😁😁 ❤️";
 
     }
 }
