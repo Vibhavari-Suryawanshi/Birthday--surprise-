@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>For My Love ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- PASSWORD SCREEN -->
+    <div id="passwordScreen" class="password-screen">
+
+        <div class="password-box">
+
+            <div class="lock-heart">💗</div>
+
+            <h1>Something Special Awaits...</h1>
+
+            <p>
+                This little world is only for you ❤️
+            </p>
+
+            <input
+                type="password"
+                id="passwordInput"
+                placeholder="Enter your secret password"
+            >
+
+            <button onclick="checkPassword()">
+                Open My Heart 💌
+            </button>
+
+            <p id="errorMessage"></p>
+
+        </div>
+
+    </div>
+
+
+    <!-- MAIN WEBSITE -->
+    <div id="mainWebsite" class="hidden">
+
+        <!-- Floating hearts -->
+        <div class="hearts"></div>
+
+
+        <!-- HERO -->
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="small-title">
+                    A little surprise for you...
+                </p>
+
+                <h1>
+                    Happy Birthday
+                    <span>My Love ❤️</span>
+                </h1>
+
+                <p class="hero-text">
+                    Today is all about celebrating the person
+                    who makes my world a little more beautiful.
+                </p>
+
+                <button class="scroll-btn" onclick="scrollToMemories()">
+                    Our Story ↓
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- LOVE MESSAGE -->
+        <section class="love-message">
+
+            <div class="section-heading">
+                <p>FROM MY HEART</p>
+                <h2>A Letter For You 💌</h2>
+            </div>
+
+            <div class="letter">
+
+                <p>
+                    My Love,
+                </p>
+
+                <p>
+                    Happy Birthday to the most special person in my life.
+                    ❤️
+                </p>
+
+                <p>
+                    I don't know if words can ever explain how much
+                    you mean to me, but I want you to know that every
+                    moment with you is something I will always treasure.
+                </p>
+
+                <p>
+                    From our first meeting to all the little memories
+                    we've created together, every moment has become
+                    a beautiful part of my story.
+                </p>
+
+                <p>
+                    I hope this new year of your life brings you
+                    happiness, success, peace and everything your heart
+                    wishes for.
+                </p>
+
+                <p>
+                    And selfishly... I hope I get to be beside you
+                    for many, many more birthdays. 🥹❤️
+                </p>
+
+                <p class="signature">
+                    Forever yours,<br>
+                    ❤️ Your Girl
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- MEMORIES -->
+        <section class="memories" id="memories">
+
+            <div class="section-heading">
+
+                <p>OUR LITTLE TIMELINE</p>
+
+                <h2>
+                    Memories I Never Want To Forget 📸
+                </h2>
+
+            </div>
+
+
+            <div class="memory-grid">
+
+
+                <!-- FIRST MEET -->
+                <div class="memory-card">
+
+                    <div class="photo-container">
+
+                        <img
+                            src="photos/first-meet.jpg"
+                            alt="Our First Meet"
+                        >
+
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>01</span>
+
+                        <h3>Our First Meet 🌸</h3>
+
+                        <p>
+                            The day our story quietly began.
+                            I didn't know then how important you
+                            would become to me.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FIRST DATE -->
+                <div class="memory-card">
+
+                    <div class="photo-container">
+
+                        <img
+                            src="photos/first-date.jpg"
+                            alt="Our First Date"
+                        >
+
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>02</span>
+
+                        <h3>Our First Date ☕</h3>
+
+                        <p>
+                            One day, one date, a thousand little
+                            memories that I still smile about.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- FAVOURITE MEMORY -->
+                <div class="memory-card">
+
+                    <div class="photo-container">
+
+                        <img
+                            src="photos/favourite-memory.jpg"
+                            alt="Favourite Memory"
+                        >
+
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>03</span>
+
+                        <h3>My Favourite Memory 💕</h3>
+
+                        <p>
+                            Out of all our memories, this one will
+                            always have a special place in my heart.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- TOGETHER -->
+                <div class="memory-card">
+
+                    <div class="photo-container">
+
+                        <img
+                            src="photos/together.jpg"
+                            alt="Us Together"
+                        >
+
+                    </div>
+
+                    <div class="memory-content">
+
+                        <span>04</span>
+
+                        <h3>Just Us 🫶</h3>
+
+                        <p>
+                            Because somehow, ordinary moments become
+                            extraordinary when I'm with you.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- PHOTO GALLERY -->
+        <section class="gallery">
+
+            <div class="section-heading">
+
+                <p>US ❤️</p>
+
+                <h2>Our Little Photo Album</h2>
+
+            </div>
+
+
+            <div class="gallery-grid">
+
+                <div class="gallery-item">
+                    <img src="photos/first-meet.jpg">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="photos/first-date.jpg">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="photos/favourite-memory.jpg">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="photos/together.jpg">
+                </div>
+
+                <div class="gallery-item">
+                    <img src="photos/birthday.jpg">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SURPRISE -->
+        <section class="surprise">
+
+            <div class="surprise-box">
+
+                <div class="gift">🎁</div>
+
+                <h2>
+                    One Last Little Surprise...
+                </h2>
+
+                <p>
+                    I saved something special for you.
+                </p>
+
+                <button onclick="showSurprise()">
+                    Open It ❤️
+                </button>
+
+                <div id="surpriseMessage" class="hidden surprise-message">
+
+                    <h3>
+                        I Love You ❤️
+                    </h3>
+
+                    <p>
+                        More than yesterday,
+                        less than tomorrow. 🥹
+                    </p>
+
+                    <p>
+                        Happy Birthday, my favourite person. 🎂❤️
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FOOTER -->
+        <footer>
+
+            <p>
+                Made with infinite love ❤️
+            </p>
+
+            <p>
+                For the birthday boy ✨
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
