@@ -1,1 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <title>For My Love ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Dancing+Script:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- ================= PASSWORD SCREEN ================= -->
+
+<div id="passwordScreen">
+
+    <div class="password-card">
+
+        <div class="big-heart">♥</div>
+
+        <p class="tiny-heading">A LITTLE SURPRISE FOR YOU</p>
+
+        <h1>Only You Can Open This ❤️</h1>
+
+        <p class="password-text">
+            This little corner of my heart is protected
+            just for you.
+        </p>
+
+        <input
+            type="password"
+            id="passwordInput"
+            placeholder="Enter your secret password"
+        >
+
+        <button onclick="unlockWebsite()">
+            Unlock My Heart 💌
+        </button>
+
+        <p id="wrongPassword"></p>
+
+    </div>
+
+</div>
+
+
+<!-- ================= MAIN WEBSITE ================= -->
+
+<main id="website" class="hidden">
+
+
+<!-- FLOATING HEARTS -->
+
+<div id="hearts-container"></div>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <p class="eyebrow">
+            TODAY IS ALL ABOUT YOU ✨
+        </p>
+
+        <h1>
+            Happy Birthday
+            <span>My Love ❤️</span>
+        </h1>
+
+        <p class="hero-subtitle">
+            To the person who makes my ordinary days
+            feel extraordinary.
+        </p>
+
+        <button class="main-button" onclick="goToStory()">
+            Enter Our Story ↓
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CUTE ANIMATION MESSAGE ================= -->
+
+<section class="cute-message">
+
+    <div class="cute-card">
+
+        <div class="sparkle">✦</div>
+
+        <h2>
+            Hey Birthday Boy...
+        </h2>
+
+        <p id="typingText"></p>
+
+        <div class="mini-hearts">
+            ♥ ♥ ♥
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= OUR STORY ================= -->
+
+<section class="story" id="story">
+
+    <div class="section-title">
+
+        <p>CHAPTERS OF US</p>
+
+        <h2>Our Story 📖</h2>
+
+        <span>
+            Some moments become memories.
+            Some memories become forever.
+        </span>
+
+    </div>
+
+
+    <div class="timeline">
+
+
+        <!-- FIRST MEET -->
+
+        <div class="timeline-item">
+
+            <div class="timeline-image">
+
+                <img
+                    src="photos/first-meet.jpg"
+                    alt="Our First Meet"
+                >
+
+            </div>
+
+            <div class="timeline-content">
+
+                <span>01 — THE BEGINNING</span>
+
+                <h3>Our First Meet 🌸</h3>
+
+                <p>
+                    This was the moment our story started.
+                    I had no idea that meeting you would
+                    eventually give me so many beautiful
+                    memories.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- FIRST DATE -->
+
+        <div class="timeline-item reverse">
+
+            <div class="timeline-image">
+
+                <img
+                    src="photos/first-date.jpg"
+                    alt="Our First Date"
+                >
+
+            </div>
+
+            <div class="timeline-content">
+
+                <span>02 — A SPECIAL DAY</span>
+
+                <h3>Our First Date ❤️</h3>
+
+                <p>
+                    One date, countless smiles, and a memory
+                    that I can replay in my head forever.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- MEMORY -->
+
+        <div class="timeline-item">
+
+            <div class="timeline-image">
+
+                <img
+                    src="photos/memory-1.jpg"
+                    alt="Beautiful Memory"
+                >
+
+            </div>
+
+            <div class="timeline-content">
+
+                <span>03 — A MEMORY</span>
+
+                <h3>One Of My Favourite Days 🥹</h3>
+
+                <p>
+                    Every picture has a story, and this one
+                    will always have a special place in my heart.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ANOTHER MEMORY -->
+
+        <div class="timeline-item reverse">
+
+            <div class="timeline-image">
+
+                <img
+                    src="photos/memory-2.jpg"
+                    alt="Our Memory"
+                >
+
+            </div>
+
+            <div class="timeline-content">
+
+                <span>04 — US</span>
+
+                <h3>Just You & Me 🫶</h3>
+
+                <p>
+                    Somehow even the simplest moments become
+                    special when I'm with you.
+                </p>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= PHOTO GALLERY ================= -->
+
+<section class="gallery">
+
+    <div class="section-title">
+
+        <p>OUR LITTLE PHOTO ALBUM</p>
+
+        <h2>Us, Through My Eyes 📸</h2>
+
+        <span>
+            A few pictures of my favourite person.
+        </span>
+
+    </div>
+
+
+    <div class="gallery-grid">
+
+        <div class="gallery-photo large">
+            <img src="photos/first-meet.jpg">
+        </div>
+
+        <div class="gallery-photo">
+            <img src="photos/first-date.jpg">
+        </div>
+
+        <div class="gallery-photo">
+            <img src="photos/memory-1.jpg">
+        </div>
+
+        <div class="gallery-photo">
+            <img src="photos/memory-2.jpg">
+        </div>
+
+        <div class="gallery-photo">
+            <img src="photos/memory-3.jpg">
+        </div>
+
+        <div class="gallery-photo large">
+            <img src="photos/us.jpg">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= REASONS ================= -->
+
+<section class="reasons">
+
+    <div class="section-title">
+
+        <p>JUST SO YOU KNOW</p>
+
+        <h2>Reasons Why I Love You ❤️</h2>
+
+    </div>
+
+
+    <div class="reason-grid">
+
+
+        <div class="reason-card">
+
+            <span>01</span>
+
+            <div>♥</div>
+
+            <h3>Your Smile</h3>
+
+            <p>
+                Because somehow your smile can make
+                even my worst day better.
+            </p>
+
+        </div>
+
+
+        <div class="reason-card">
+
+            <span>02</span>
+
+            <div>♥</div>
+
+            <h3>Your Heart</h3>
+
+            <p>
+                The way you care, love and make people
+                feel special is something I adore.
+            </p>
+
+        </div>
+
+
+        <div class="reason-card">
+
+            <span>03</span>
+
+            <div>♥</div>
+
+            <h3>You Understand Me</h3>
+
+            <p>
+                With you, I can be completely myself
+                without pretending to be anyone else.
+            </p>
+
+        </div>
+
+
+        <div class="reason-card">
+
+            <span>04</span>
+
+            <div>♥</div>
+
+            <h3>You Make Me Happy</h3>
+
+            <p>
+                Life just feels a little more beautiful
+                when you're around.
+            </p>
+
+        </div>
+
+
+        <div class="reason-card">
+
+            <span>05</span>
+
+            <div>♥</div>
+
+            <h3>Our Little Moments</h3>
+
+            <p>
+                The random conversations, laughs,
+                jokes and everything in between.
+            </p>
+
+        </div>
+
+
+        <div class="reason-card">
+
+            <span>06</span>
+
+            <div>♥</div>
+
+            <h3>Because You're You</h3>
+
+            <p>
+                And honestly, I don't need another reason.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- ================= LOVE LETTER ================= -->
+
+<section class="letter-section">
+
+    <div class="section-title">
+
+        <p>WORDS FROM MY HEART</p>
+
+        <h2>A Letter For You 💌</h2>
+
+    </div>
+
+
+    <div class="letter">
+
+        <p class="letter-start">
+            My Love,
+        </p>
+
+        <p>
+            Happy Birthday to the most special person
+            in my life. ❤️
+        </p>
+
+        <p>
+            I don't know if I will ever find enough words
+            to explain what you mean to me, but today I
+            want to try.
+        </p>
+
+        <p>
+            When I look back at our journey, I smile at
+            all the little moments that brought us here.
+            Our first meeting, our first date, our silly
+            conversations, our laughs, our pictures and
+            all those moments that only we understand.
+        </p>
+
+        <p>
+            You have become such an important part of my
+            life. You make me laugh, you make me feel
+            understood, and most importantly, you make me
+            feel loved.
+        </p>
+
+        <p>
+            On your birthday, I wish you everything
+            beautiful that life has to offer. I hope you
+            achieve every dream you have, and I hope you
+            always remember how incredibly special you are.
+        </p>
+
+        <p>
+            And if I could make one selfish wish today,
+            it would be that I get to celebrate many,
+            many more birthdays with you. 🥹❤️
+        </p>
+
+        <p>
+            Thank you for being you.
+            Thank you for being part of my story.
+            And thank you for giving me so many memories
+            worth keeping forever.
+        </p>
+
+        <p>
+            I love you more than these words can explain.
+        </p>
+
+        <p class="letter-end">
+            Forever yours,<br>
+            <span>❤️ Your Girl</span>
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FINAL SURPRISE ================= -->
+
+<section class="final-surprise">
+
+    <div class="surprise-content">
+
+        <div class="gift-box">
+            🎁
+        </div>
+
+        <p class="eyebrow">
+            YOU MADE IT TO THE END
+        </p>
+
+        <h2>
+            One Last Surprise...
+        </h2>
+
+        <p>
+            But you'll have to open it yourself.
+        </p>
+
+        <button
+            class="main-button"
+            onclick="openSurprise()"
+        >
+            Open Your Surprise ❤️
+        </button>
+
+
+        <div id="finalMessage" class="final-message hidden">
+
+            <div class="heart-burst">
+                ❤️
+            </div>
+
+            <h3>
+                I Love You ❤️
+            </h3>
+
+            <p>
+                Happy Birthday, My Love.
+            </p>
+
+            <p>
+                You are one of the most beautiful
+                chapters of my life.
+            </p>
+
+            <p class="forever">
+                Here's to us. Today, tomorrow,
+                and all the beautiful days ahead. 🥂
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <div class="footer-heart">
+        ♥
+    </div>
+
+    <p>
+        Made with love, just for you.
+    </p>
+
+    <p>
+        Happy Birthday ❤️
+    </p>
+
+</footer>
+
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
