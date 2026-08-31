@@ -3,7 +3,7 @@
    CHANGE THIS!
 ===================================== */
 
-const correctPassword = "ILOVEYOU";
+const correctPassword = "18MAY2025";
 
 
 /* =====================================
